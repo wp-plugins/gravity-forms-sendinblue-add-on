@@ -3,7 +3,7 @@
 Plugin Name: Gravity Forms SendinBlue Add-On
 Plugin URI: https://www.sendinblue.com/?r=wporg
 Description: Integrates Gravity Forms with SendinBlue allowing form submissions to be automatically sent to your SendinBlue account.
-Version: 1.0.0
+Version: 1.0.1
 Author: SendinBlue
 Author URI: https://www.sendinblue.com/?r=wporg
 License: GPLv2 or later
@@ -76,10 +76,14 @@ if (!class_exists('GFSIB_Manager')) {
                 load_plugin_textdomain('gravity-forms-sendinblue', FALSE, '/gravity-forms-sendinblue/lang');
             }
 
+
             //Load data class.
             require_once(self::get_base_path() . "/inc/data.php");
             //self::add_permissions();
             if (is_admin()) {
+                if (!class_exists('RGForms')) {
+                  return;
+                }
                 //loading translations
                 load_plugin_textdomain('gravity-forms-sendinblue', FALSE, '/gravity-forms-sendinblue/lang');
 

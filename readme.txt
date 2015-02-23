@@ -53,5 +53,9 @@ If you need some assistance, you can post an issue in the tab « Support » or s
 
 
 == Changelog ==
+= 1.0.1 =
+Checked the compatibility with new version of plugin "Gravity Forms" 1.9.1.
+Fixed the error that happens when plugin "Gravity Forms" is updated.
+
 = 1.0 =
 Launch plugin.
