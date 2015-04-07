@@ -1,7 +1,7 @@
 === Gravity Forms SendinBlue Add-On ===
 Tags: gravity forms, forms, gravity, form, crm, gravity form, mail, email, newsletter, SendinBlue, plugin, sidebar, widget, mailing list, API, email marketing, newsletters
 Requires at least: 3.0
-Tested up to: 4.1
+Tested up to: 4.1.1
 Stable tag: trunk
 Contributors: SendinBlue
 
@@ -53,6 +53,10 @@ If you need some assistance, you can post an issue in the tab « Support » or s
 
 
 == Changelog ==
+= 1.0.2 =
+Fix the error - "Ajax error while selecting a form".
+Update mailin api wrapper
+
 = 1.0.1 =
 Checked the compatibility with new version of plugin "Gravity Forms" 1.9.1.
 Fixed the error that happens when plugin "Gravity Forms" is updated.
